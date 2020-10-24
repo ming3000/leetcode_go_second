@@ -1,6 +1,6 @@
 package leetcode_go_second
 
-func isPalindrome(head *ListNode) bool {
+func isPalindrome2(head *ListNode) bool {
 	if head == nil || head.Next == nil {
 		return true
 	}
