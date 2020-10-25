@@ -1,6 +1,6 @@
 package leetcode_go_third
 
-func twoSum(nums []int, target int) []int {
+func twoSum001(nums []int, target int) []int {
 	cm := make(map[int]int, len(nums))
 	for i, v := range nums {
 		diff := target - v
