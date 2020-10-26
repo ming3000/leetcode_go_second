@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func maxDepth(root *TreeNode) int {
 	if root == nil {

@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func twoSum001(nums []int, target int) []int {
 	cm := make(map[int]int, len(nums))

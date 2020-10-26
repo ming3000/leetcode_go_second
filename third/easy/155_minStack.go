@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 type MinStack struct {
 	data    []int

@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func sortedArrayToBST(nums []int) *TreeNode {
 	if len(nums) == 0 {

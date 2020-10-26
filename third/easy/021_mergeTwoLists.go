@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 	sentry := &ListNode{}

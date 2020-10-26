@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func binarySearchFirst(nums []int, target int) int {
 	low, high := 0, len(nums)-1

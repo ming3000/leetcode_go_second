@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func twoSum167(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1

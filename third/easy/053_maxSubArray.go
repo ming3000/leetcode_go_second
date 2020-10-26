@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func maxSubArray(nums []int) int {
 	var theMax = nums[0]

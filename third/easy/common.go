@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func maxInt(a, b int) int {
 	if a > b {

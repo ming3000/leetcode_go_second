@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func isValid(s string) bool {
 	checkMap := map[byte]byte{'{': '}', '[': ']', '(': ')'}

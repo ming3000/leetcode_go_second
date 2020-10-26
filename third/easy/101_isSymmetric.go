@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func isSymmetric(root *TreeNode) bool {
 	u, v := root, root

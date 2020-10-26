@@ -1,4 +1,4 @@
-package leetcode_go_third
+package easy
 
 func removeDuplicates(nums []int) int {
 	var slow int
