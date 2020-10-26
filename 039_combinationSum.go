@@ -10,6 +10,9 @@ func combinationSum(candidates []int, target int) [][]int {
 }
 
 func dfsCombinationSum(candidates []int, target int, start int, path []int, res *[][]int) {
+	if target < 0 {
+		return
+	}
 	if target == 0 {
 		temp := make([]int, len(path))
 		copy(temp, path)
