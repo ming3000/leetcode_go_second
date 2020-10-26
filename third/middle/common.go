@@ -1,4 +1,4 @@
-package easy
+package middle
 
 func maxInt(a, b int) int {
 	if a > b {
