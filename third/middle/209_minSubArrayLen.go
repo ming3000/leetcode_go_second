@@ -4,7 +4,7 @@ import "math"
 
 func minSubArrayLen(s int, nums []int) int {
 	left, right := 0, -1
-	sum, ret := 0, math.MinInt64
+	sum, ret := 0, math.MaxInt64
 
 	for left < len(nums) {
 		if right+1 < len(nums) && sum < s {
@@ -16,8 +16,8 @@ func minSubArrayLen(s int, nums []int) int {
 		} // else>>
 
 		if sum > s {
-			ret = maxInt(ret, right-left+1)
-		}
+			ret = minInt(ret, right-left+1)
+		} // if>>
 	} // if>
 
 	if ret == math.MaxInt64 {
