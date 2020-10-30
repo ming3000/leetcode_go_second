@@ -1,4 +1,4 @@
-package first
+package middle
 
 func lowestCommonAncestor2(root, p, q *TreeNode) *TreeNode {
 	// 如果大家这样去思考的话，问题就会得到简化。
