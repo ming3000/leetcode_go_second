@@ -9,18 +9,23 @@ func flatten(root *TreeNode) {
 }
 
 func preOrderTraversal(root *TreeNode) []*TreeNode {
+	if root == nil {
+		return nil
+	}
+
 	preList := make([]*TreeNode, 0)
-	stack := make([]*TreeNode, 0)
-	node := root
-	for len(stack) > 0 || node != nil {
-		for node != nil {
-			preList = append(preList, node)
-			stack = append(stack, node)
-			node = node.Left
-		} // for>>
-		node = stack[len(stack)-1]
-		node = node.Right
+	stack := []*TreeNode{root}
+	for len(stack) > 0 {
+		node := stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
+
+		preList = append(preList, node)
+		if node.Right != nil {
+			stack = append(stack, node.Right)
+		}
+		if node.Left != nil {
+			stack = append(stack, node.Left)
+		}
 	} // for>
 	return preList
 }
