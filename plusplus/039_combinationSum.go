@@ -1,6 +1,9 @@
 package plusplus
 
+import "sort"
+
 func combinationSum(candidates []int, target int) [][]int {
+	sort.Ints(candidates)
 	ret := make([][]int, 0)
 	dfsCombinationSum(candidates, target, 0, nil, &ret)
 	return ret
